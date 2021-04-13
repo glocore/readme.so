@@ -9,5 +9,7 @@
   "language": "Language",
   "english": "English",
   "french": "French",
-  "spanish": "Spanish"
+  "spanish": "Spanish",
+  "download-modal-title": "Readme Generated!",
+  "download-modal-body": "Thanks for using readme.so! Feel free to reach out to me on Twitter with any feedback.\nIf you found this product helpful, consider supporting me with a cup of coffee!"
 }

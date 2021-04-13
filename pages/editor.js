@@ -7,6 +7,7 @@ import { Nav } from '../components/Nav'
 import { PreviewColumn } from '../components/PreviewColumn'
 import { SectionsColumn } from '../components/SectionsColumn'
 import { sectionTemplates } from '../data/section-templates'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 export default function Editor() {
   const [selectedSectionSlugs, setSelectedSectionSlugs] = useState([])
@@ -102,3 +103,9 @@ export default function Editor() {
     </>
   )
 }
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  }
+})

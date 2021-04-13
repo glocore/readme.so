@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next"
+
 export const DownloadModal = ({ setShowModal }) => {
+  const { t } = useTranslation("common")
+
   return (
     <>
       {/* This example requires Tailwind CSS v2.0+ */}
@@ -43,7 +47,7 @@ Leaving: "ease-in duration-200"
               <p className="text-center text-7xl">🎉</p>
               <div className="mt-3 text-center sm:mt-5">
                 <h3 className="text-lg font-medium leading-6 text-gray-900" id="modal-title">
-                  Readme Generated!
+                  {t("download-modal-title")}
                 </h3>
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">
